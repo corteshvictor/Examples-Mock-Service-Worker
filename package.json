@@ -1,0 +1,46 @@
+{
+  "name": "examples-mock-service-worker",
+  "version": "1.0.0",
+  "description": "Examples of how to use mock service worker ",
+  "main": "index.js",
+  "engines": {
+    "node": ">=14",
+    "npm": ">=7"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corteshvictor/Examples-Mock-Service-Worker.git"
+  },
+  "keywords": [],
+  "author": "corteshvictor.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corteshvictor/Examples-Mock-Service-Worker/issues"
+  },
+  "homepage": "https://github.com/corteshvictor/Examples-Mock-Service-Worker#readme",
+  "devDependencies": {
+    "jest": "28.1.0",
+    "jest-cli": "28.1.0",
+    "msw": "0.42.1",
+    "sinon": "14.0.0"
+  },
+  "dependencies": {
+    "axios": "0.27.2",
+    "dotenv": "16.0.1"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/mocks/**"
+    ]
+  }
+}
